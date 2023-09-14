@@ -12,12 +12,12 @@ phases:
       - mvn compile
       - mvn test
       - mvn install
-       - command
+       #- command
   post_build:
     commands:
       - mvn package
       - mv target/protobootapp-0.0.1-SNAPSHOT.jar root.jar
-      - command
+      #- command
 reports:
   jacoco-report:
     files:
