@@ -12,7 +12,7 @@ phases:
       - mvn compile
       - mvn test
       - mvn install
-       #- command
+      #- command
   post_build:
     commands:
       - mvn package
